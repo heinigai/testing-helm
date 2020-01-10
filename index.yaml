@@ -3,7 +3,7 @@ entries:
   billtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T12:00:36.611829+08:00"
+    created: "2020-01-10T14:17:53.19531+08:00"
     description: A Helm chart for Kubernetes
     digest: c12f1957041f55adde1a3e2b0f05337c6488b6152243858cd7cf3759caddb0ad
     name: billtest
@@ -11,10 +11,21 @@ entries:
     urls:
     - billtest-0.1.0.tgz
     version: 0.1.0
+  billtest-front:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-01-10T14:17:53.198451+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 306dd62c3ecd152af556246bc062b15e839961a7ef4ea79f8ebe86b651a5bb93
+    name: billtest-front
+    type: application
+    urls:
+    - billtest-front-0.1.0.tgz
+    version: 0.1.0
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T12:00:36.614661+08:00"
+    created: "2020-01-10T14:17:53.199099+08:00"
     description: A Helm chart for Kubernetes
     digest: 896935a875c8fe8f8b9b81e5862413de316f8da3d6d9a7e0f6f1e90f6204f551
     name: mychart
@@ -25,7 +36,7 @@ entries:
   mytestchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T12:00:36.615405+08:00"
+    created: "2020-01-10T14:17:53.199721+08:00"
     description: A Helm chart for Kubernetes
     digest: 7ad52bccb1c2fa04cd8b9acf1109b0c6ae714459ca44518c6f28e36238e15c2e
     name: mytestchart
@@ -33,4 +44,4 @@ entries:
     urls:
     - mytestchart-0.1.0.tgz
     version: 0.1.0
-generated: "2020-01-10T12:00:36.610643+08:00"
+generated: "2020-01-10T14:17:53.189849+08:00"
