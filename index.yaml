@@ -3,45 +3,56 @@ entries:
   billtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T15:16:47.656111+08:00"
+    created: "2020-01-13T15:40:34.320816+08:00"
     description: A Helm chart for Kubernetes
     digest: c12f1957041f55adde1a3e2b0f05337c6488b6152243858cd7cf3759caddb0ad
     name: billtest
     type: application
     urls:
-    - billtest-0.1.0.tgz
+    - https://heinigai.github.io/testing-helm/billtest-0.1.0.tgz
+    version: 0.1.0
+  billtest-backend:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-01-13T15:40:34.321348+08:00"
+    description: A Helm chart for Kubernetes
+    digest: f979490486c514b525a2ea67920fe6c95cc21d854d47049dc92d876364a01a2d
+    name: billtest-backend
+    type: application
+    urls:
+    - https://heinigai.github.io/testing-helm/billtest-backend-0.1.0.tgz
     version: 0.1.0
   billtest-front:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T15:16:47.658243+08:00"
+    created: "2020-01-13T15:40:34.324822+08:00"
     description: A Helm chart for Kubernetes
     digest: 9205f723e9f259ac1c9628552a1f1e6fba42c692770a5c0de30794c7430bd5a5
     name: billtest-front
     type: application
     urls:
-    - billtest-front-0.1.0.tgz
+    - https://heinigai.github.io/testing-helm/billtest-front-0.1.0.tgz
     version: 0.1.0
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T15:16:47.659041+08:00"
+    created: "2020-01-13T15:40:34.325596+08:00"
     description: A Helm chart for Kubernetes
     digest: 896935a875c8fe8f8b9b81e5862413de316f8da3d6d9a7e0f6f1e90f6204f551
     name: mychart
     type: application
     urls:
-    - mychart-0.1.0.tgz
+    - https://heinigai.github.io/testing-helm/mychart-0.1.0.tgz
     version: 0.1.0
   mytestchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-10T15:16:47.659817+08:00"
+    created: "2020-01-13T15:40:34.326684+08:00"
     description: A Helm chart for Kubernetes
     digest: 7ad52bccb1c2fa04cd8b9acf1109b0c6ae714459ca44518c6f28e36238e15c2e
     name: mytestchart
     type: application
     urls:
-    - mytestchart-0.1.0.tgz
+    - https://heinigai.github.io/testing-helm/mytestchart-0.1.0.tgz
     version: 0.1.0
-generated: "2020-01-10T15:16:47.654597+08:00"
+generated: "2020-01-13T15:40:34.319373+08:00"

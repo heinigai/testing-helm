@@ -5,16 +5,16 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: 172.31.17.229:5000/billtest:v1
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: "b-backend"
+fullnameOverride: "b-backend"
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: true
+  create: false
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
   name:
@@ -31,8 +31,12 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  # type: ClusterIP
+  # port: 80
+  type: NodePort
+  port: 5000
+  nodePort: 31001
+  name: b-backend
 
 ingress:
   enabled: false

@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfront
+  namespace: mydemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mydemo
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mydemo
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: klook-travellerpltm.test.klook.io/team
+                operator: In
+                values:
+                - test
+      containers:
+        image: 172.31.17.229:5000/billtest:v1
+        imagePullPolicy: IfNotPresent
+        name: mydemo
+        ports:
+        - containerPort: 8080
+          protocol: TCP
