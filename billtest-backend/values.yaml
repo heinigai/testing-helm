@@ -35,7 +35,7 @@ service:
   # port: 80
   type: NodePort
   port: 5000
-  nodePort: 31001
+  nodePort: 31004
   name: b-backend
 
 ingress:

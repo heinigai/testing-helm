@@ -9,8 +9,8 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       nodePort: {{ .Values.service.nodePort }}
-      targetPort: http
+      # targetPort: http
       protocol: TCP
-      name: http
+      name: {{ .Values.service.name }}
   selector:
     {{- include "billtest-front.selectorLabels" . | nindent 4 }}
