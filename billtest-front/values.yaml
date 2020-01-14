@@ -35,7 +35,7 @@ service:
   # port: 80
   type: NodePort
   port: 8080
-  nodePort: 31003
+  nodePort: 31007
   name: b-front-test
 
 ingress:
