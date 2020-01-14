@@ -9,8 +9,8 @@ image:
   pullPolicy: Always
 
 imagePullSecrets: []
-nameOverride: "b-backend"
-fullnameOverride: "b-backend"
+nameOverride: "b-backend-test"
+fullnameOverride: "b-backend-test"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -36,7 +36,7 @@ service:
   type: NodePort
   port: 5000
   nodePort: 31004
-  name: b-backend
+  name: b-backend-test
 
 ingress:
   enabled: true
