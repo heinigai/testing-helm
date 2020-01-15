@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: 172.31.17.229:5000/billtest:v2
+  repository: 172.31.17.229:5000/billtest:front
   pullPolicy: Always
 
 imagePullSecrets: []
