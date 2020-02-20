@@ -1,0 +1,9 @@
+dependencies:
+- name: hellosrv
+  repository: https://heinigai.github.io/testing-helm/
+  version: 1.0.1
+- name: nginxsrv
+  repository: https://heinigai.github.io/testing-helm/
+  version: 1.0.1
+digest: sha256:7123ad33982225567774c1ba8cfba514df176f2e9c9a062e40786279c1695579
+generated: "2020-02-20T18:15:22.147344+08:00"
