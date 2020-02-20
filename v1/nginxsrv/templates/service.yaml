@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "nginxsrv.fullname" . }}
+  labels:
+    {{- include "nginxsrv.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: {{ .Chart.Name }}
+  selector:
+    {{- include "nginxsrv.selectorLabels" . | nindent 4 }}
