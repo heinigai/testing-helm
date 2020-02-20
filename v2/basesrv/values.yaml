@@ -1,0 +1,9 @@
+nginxsrv:
+  enabled: true
+
+hellosrv:
+  enabled: true
+
+tags:
+  gosrv: true
+  websrv: true

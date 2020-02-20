@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-nameSpace: dev194
+# nameSpace: dev194
 
 image:
   repository: 172.31.17.229:5000/billtest:nginx

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "hellosrv.fullname" . }}
-  namespace: {{ .Values.nameSpace }}
+  # namespace: {{ .Values.nameSpace }}
   labels:
     {{- include "hellosrv.labels" . | nindent 4 }}
 spec:
