@@ -1,6 +1,6 @@
 dependencies:
     - name: hellosrv
-      version: 1.0.3
+      version: 1.0.4
       repository: https://heinigai.github.io/testing-helm/
       condition: hellosrv.enabled
       tags:
