@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "nginxsrv.fullname" . }}
+  namespace: {{ .Values.nameSpace }}
   labels:
     {{- include "nginxsrv.labels" . | nindent 4 }}
 spec:
