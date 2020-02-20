@@ -1,12 +1,12 @@
 dependencies:
     - name: hellosrv
-      version: 1.0.2
+      version: 1.0.3
       repository: https://heinigai.github.io/testing-helm/
       condition: hellosrv.enabled
       tags:
         - gosrv
     - name: nginxsrv
-      version: 1.0.2
+      version: 1.0.3
       repository: https://heinigai.github.io/testing-helm/
       condition: nginxsrv.enabled
       tags:
