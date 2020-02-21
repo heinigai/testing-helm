@@ -1,11 +1,9 @@
 # Default values for hello.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-global:
-  imageUrl: 172.31.17.229:5000/billtest
-  hello:
-    imageSuf: master
-    port: 5000
+imageUrl: 172.31.17.229:5000/billtest
+# hello:
+#   imageSuf: master
 
 replicaCount: 1
 
@@ -35,9 +33,9 @@ replicaCount: 1
 #   # runAsNonRoot: true
 #   # runAsUser: 1000
 
-# service:
-#   type: ClusterIP
-#   port: 80
+service:
+  type: ClusterIP
+  port: 5000
 
 # ingress:
 #   enabled: false
