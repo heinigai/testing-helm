@@ -1,7 +1,7 @@
 nginxsrv:
   enabled: true
 
-hellosrv:
+hello:
   enabled: true
 
 tags:
