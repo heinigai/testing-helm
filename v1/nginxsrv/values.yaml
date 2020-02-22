@@ -52,12 +52,12 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {}
-  # nodeAffinity:
-  #   requiredDuringSchedulingIgnoredDuringExecution:
-  #     nodeSelectorTerms:
-  #     - matchExpressions:
-  #       - key: klook-travellerpltm.test.klook.io/team
-  #         operator: In
-  #         values:
-  #         - test
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: klook-travellerpltm.test.klook.io/team
+          operator: In
+          values:
+          - test

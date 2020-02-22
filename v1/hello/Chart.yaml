@@ -1,6 +1,6 @@
 apiVersion: v2
 name: hello
-description: A Helm chart for Kubernetes test hello v3 hash
+description: A Helm chart for Kubernetes test hello affinity
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -14,7 +14,7 @@ type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: alpha+7ccc9f99d7ab6b9554624985d9c9b9723b7253c0
+version: 1.0.1-affinity+012
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.

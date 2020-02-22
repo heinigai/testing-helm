@@ -66,4 +66,14 @@ ingress:
 
 # tolerations: []
 
-# affinity: {}
+affinity:
+  key: klook-travellerpltm.test.klook.io/team
+  value: test
+  # nodeAffinity:
+  #   requiredDuringSchedulingIgnoredDuringExecution:
+  #     nodeSelectorTerms:
+  #     - matchExpressions:
+  #       - key: klook-travellerpltm.test.klook.io/team
+  #         operator: In
+  #         values:
+  #         - test
