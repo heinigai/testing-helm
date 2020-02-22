@@ -47,7 +47,14 @@ spec:
       {{- end }}
     # {{- with .Values.affinity }}
       affinity:
-        {{- include "hello.affinity" . | nindent 8 }}
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: {{ .Values.affinity.key }}
+                operator: In
+                values:
+                - {{ .Values.affinity.value }}
     # {{- end }}
     {{- with .Values.tolerations }}
       tolerations:

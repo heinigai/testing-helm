@@ -50,19 +50,6 @@ Selector labels
 app.kubernetes.io/name: {{ include "hello.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
-{{/*
-主机调度规则
-*/}}
-{{- define "hello.affinity" -}}
-nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: {{ .Values.affinity.key }}
-          operator: In
-          values:
-          - {{ .Values.affinity.value }}
-{{- end -}}
 
 {{/*
 Create the name of the service account to use
