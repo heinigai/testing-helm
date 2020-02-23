@@ -1,12 +1,12 @@
 nginx:
-  enabled: true
+  enabled: false
 
 hello:
   enabled: true
 
 tags:
   gosrv: true
-  websrv: true
+  websrv: false
 
 affinity: 
   key: "klook-travellerpltm.test.klook.io/team"
