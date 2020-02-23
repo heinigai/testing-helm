@@ -1,9 +1,9 @@
 dependencies:
 - name: hello
   repository: https://heinigai.github.io/testing-helm/
-  version: 3.0.3
+  version: 3.0.4
 - name: nginx
   repository: https://heinigai.github.io/testing-helm/
   version: 3.0.3
-digest: sha256:94bfbae6d04b144ddcd33ff09292d4bb8fa79c775e276636d07a16b7dc65d0f8
-generated: "2020-02-23T15:47:30.697922+08:00"
+digest: sha256:dc815e793ed3757e75ad44f20b35d02a805da76c67a521ae4288f4bc81899dbb
+generated: "2020-02-23T17:24:25.674364+08:00"

@@ -1,5 +1,5 @@
 nginx:
-  enabled: false
+  enabled: true
 
 hello:
   enabled: true
