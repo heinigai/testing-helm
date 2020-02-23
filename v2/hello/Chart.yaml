@@ -1,6 +1,6 @@
 apiVersion: v2
 name: hello
-description: test chart hello
+description: test chart hello values
 
 # A chart can be either an 'application' or a 'library' chart.
 #

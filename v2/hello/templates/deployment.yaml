@@ -48,17 +48,15 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-    {{- with .Values.affinity }}
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
             - matchExpressions:
-              - key: {{ .key }}
+              - key: {{ .Values.affinity.key }}
                 operator: In
                 values:
-                - {{ .value }}
-    {{- end }}
+                - {{ .Values.affinity.value }}
     {{- with .Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
