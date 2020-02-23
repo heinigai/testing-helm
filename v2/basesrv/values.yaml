@@ -1,4 +1,4 @@
-nginxsrv:
+nginx:
   enabled: true
 
 hello:
@@ -7,3 +7,7 @@ hello:
 tags:
   gosrv: true
   websrv: true
+
+affinity: 
+  key: "klook-travellerpltm.test.klook.io/team"
+  value: "debug"
