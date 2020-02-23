@@ -36,26 +36,22 @@ spec:
           #     path: /
           #     port: http
           # readinessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            #   httpGet:
+              #     path: /
+              #     port: http
+              resources:
+                {{- toYaml .Values.resources | nindent 12 }}
+          env:
+            - name: ENV_TYPE
+              value: {{default "simple" .Values.type}}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-    # {{- with .Values.affinity }}
+    {{- with .Values.affinity }}
       affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: {{ .Values.affinity.key }}
-                operator: In
-                values:
-                - {{ .Values.affinity.value }}
-    # {{- end }}
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
     {{- with .Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
