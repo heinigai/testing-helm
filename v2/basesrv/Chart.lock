@@ -4,6 +4,6 @@ dependencies:
   version: 3.0.4
 - name: nginx
   repository: https://heinigai.github.io/testing-helm/
-  version: 3.0.3
-digest: sha256:dc815e793ed3757e75ad44f20b35d02a805da76c67a521ae4288f4bc81899dbb
-generated: "2020-02-23T17:24:25.674364+08:00"
+  version: 3.0.4
+digest: sha256:e1e2550b789004c9bb37059b4f425701e07dbd0acb9c7b880957404af166c5c1
+generated: "2020-02-23T17:37:58.91219+08:00"
