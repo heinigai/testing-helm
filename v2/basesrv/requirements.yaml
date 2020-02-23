@@ -9,8 +9,8 @@ dependencies:
       tags:
         - gosrv
     - name: nginx
-      version: 3.0.3
+      version: 3.0.4
       repository: https://heinigai.github.io/testing-helm/
-      condition: nginx.enabled
+    #   condition: nginx.enabled
       tags:
         - websrv
