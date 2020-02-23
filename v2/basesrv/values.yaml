@@ -8,6 +8,6 @@ tags:
   gosrv: true
   websrv: false
 
-affinity: 
-  key: "klook-travellerpltm.test.klook.io/team"
-  value: "debug"
+global:
+  affinityKey: "klook-travellerpltm.test.klook.io/team"
+  affinityValue: "debug"

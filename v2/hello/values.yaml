@@ -47,6 +47,6 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: 
-  key: "klook-travellerpltm.test.klook.io/team"
-  value: "test"
+global:
+  affinityKey: "klook-travellerpltm.test.klook.io/team"
+  affinityValue: "test"

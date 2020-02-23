@@ -53,10 +53,10 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
             - matchExpressions:
-              - key: {{ .Values.affinity.key }}
+              - key: {{ .Values.global.affinityKey }}
                 operator: In
                 values:
-                - {{ .Values.affinity.value }}
+                - {{ .Values.global.affinityValue }}
     {{- with .Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
