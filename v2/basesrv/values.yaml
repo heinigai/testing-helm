@@ -1,5 +1,5 @@
-# nginx:
-#   enabled: true
+nginx:
+  enabled: true
 
 hello:
   # branch: alpha
