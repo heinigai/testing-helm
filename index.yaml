@@ -3,7 +3,29 @@ entries:
   basesrv:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.954843+08:00"
+    created: "2020-02-24T10:49:37.02419+08:00"
+    dependencies:
+    - condition: hello.enabled
+      name: hello
+      repository: https://heinigai.github.io/testing-helm/
+      tags:
+      - gosrv
+      version: 3.0.4
+    - name: nginx
+      repository: https://heinigai.github.io/testing-helm/
+      tags:
+      - websrv
+      version: 3.0.4
+    description: test for tag enable demo
+    digest: e806d75302194bf0a1ed3f23fc2776f8ebb73a2a9d1ac1f12b146cd8bcde8ec6
+    name: basesrv
+    type: application
+    urls:
+    - basesrv-4.0.1.tgz
+    version: 4.0.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-02-24T10:49:37.020943+08:00"
     dependencies:
     - condition: hello.enabled
       name: hello
@@ -25,7 +47,7 @@ entries:
     version: 3.0.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.953863+08:00"
+    created: "2020-02-24T10:49:37.01902+08:00"
     dependencies:
     - condition: hello.enabled
       name: hello
@@ -48,7 +70,7 @@ entries:
     version: 3.0.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.952836+08:00"
+    created: "2020-02-24T10:49:37.017501+08:00"
     dependencies:
     - condition: hello.enabled
       name: hello
@@ -71,7 +93,7 @@ entries:
     version: 3.0.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.951828+08:00"
+    created: "2020-02-24T10:49:37.015908+08:00"
     dependencies:
     - condition: hello.enabled
       name: hello
@@ -94,7 +116,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.95095+08:00"
+    created: "2020-02-24T10:49:37.014441+08:00"
     dependencies:
     - condition: hello.enabled
       name: hello
@@ -117,7 +139,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.949149+08:00"
+    created: "2020-02-24T10:49:37.011573+08:00"
     dependencies:
     - condition: hellosrv.enabled
       name: hellosrv
@@ -140,7 +162,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.947941+08:00"
+    created: "2020-02-24T10:49:37.010028+08:00"
     dependencies:
     - condition: hellosrv.enabled
       name: hellosrv
@@ -164,7 +186,7 @@ entries:
   billtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.955309+08:00"
+    created: "2020-02-24T10:49:37.025269+08:00"
     description: A Helm chart for Kubernetes
     digest: c12f1957041f55adde1a3e2b0f05337c6488b6152243858cd7cf3759caddb0ad
     name: billtest
@@ -175,7 +197,7 @@ entries:
   billtest-backend:
   - apiVersion: v2
     appVersion: "1"
-    created: "2020-02-23T17:38:28.9587+08:00"
+    created: "2020-02-24T10:49:37.033916+08:00"
     description: A Helm chart for Kubernetes
     digest: 794ca836ce4ab57184e17e13a8d1ac3acf2134d1061dae1f56bd413871de8bb1
     name: billtest-backend
@@ -185,7 +207,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: "1"
-    created: "2020-02-23T17:38:28.959046+08:00"
+    created: "2020-02-24T10:49:37.03503+08:00"
     description: A Helm chart for Kubernetes
     digest: d250ac96c586438516aeb01771c1f1054828b9923cab670bbb576f2dbc059850
     name: billtest-backend
@@ -195,7 +217,7 @@ entries:
     version: "1"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.958272+08:00"
+    created: "2020-02-24T10:49:37.032316+08:00"
     description: A Helm chart for Kubernetes
     digest: d66efdba69cbf60d51a098495eafaf9ad07dee8f2e98f06109de9bcedf02be73
     name: billtest-backend
@@ -205,7 +227,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.957211+08:00"
+    created: "2020-02-24T10:49:37.030902+08:00"
     description: A Helm chart for Kubernetes
     digest: 78dcb5798d57e362ae28bc5790eaf3c8ddb8e819914a7d09c506a59fff9b8bda
     name: billtest-backend
@@ -215,7 +237,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.956739+08:00"
+    created: "2020-02-24T10:49:37.029053+08:00"
     description: A Helm chart for Kubernetes
     digest: e3c0ece4c4aae657434c79c55d369e157776fa6b2e2052cbb4a4324a55ef0c6b
     name: billtest-backend
@@ -225,7 +247,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.956237+08:00"
+    created: "2020-02-24T10:49:37.027534+08:00"
     description: A Helm chart for Kubernetes
     digest: 577096a05da5a152fc88b29a5a6a435006117b440749dc9ec4b8a0a2e63192bc
     name: billtest-backend
@@ -235,7 +257,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.955756+08:00"
+    created: "2020-02-24T10:49:37.026422+08:00"
     description: A Helm chart for Kubernetes
     digest: 38d0d09144379ca4e00afbe2d7a05713cbc646241d8d0f813983778e9ee298d6
     name: billtest-backend
@@ -246,7 +268,7 @@ entries:
   billtest-front:
   - apiVersion: v2
     appVersion: "1"
-    created: "2020-02-23T17:38:28.96231+08:00"
+    created: "2020-02-24T10:49:37.045242+08:00"
     description: A Helm chart for Kubernetes
     digest: 52b635cd8811f68079f1569752b3273eef53f0bf6a0b6e116121e264484c5d00
     name: billtest-front
@@ -256,7 +278,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: "1"
-    created: "2020-02-23T17:38:28.962669+08:00"
+    created: "2020-02-24T10:49:37.04595+08:00"
     description: A Helm chart for Kubernetes
     digest: ea545f28cdc861768454b0d8c409c7dc4287960fe095f61a96b433f8a51c17fd
     name: billtest-front
@@ -266,7 +288,7 @@ entries:
     version: "1"
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2020-02-23T17:38:28.961945+08:00"
+    created: "2020-02-24T10:49:37.044125+08:00"
     description: A Helm chart for Kubernetes
     digest: d34dc33c92b900c598402a56eace1519b95605a49c550d30b26944098baedd1d
     name: billtest-front
@@ -276,7 +298,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2020-02-23T17:38:28.961527+08:00"
+    created: "2020-02-24T10:49:37.042581+08:00"
     description: A Helm chart for Kubernetes
     digest: f3afeb47e529c465c05c8fcbeebbf76b7700c31a6a95c17d02d44724937360bd
     name: billtest-front
@@ -286,7 +308,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2020-02-23T17:38:28.961113+08:00"
+    created: "2020-02-24T10:49:37.040069+08:00"
     description: A Helm chart for Kubernetes
     digest: 178ab7b3cf7d3f6e75d24af59fc9f4e337ae02c3394754f1adcd815a3d8ab958
     name: billtest-front
@@ -296,7 +318,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.960711+08:00"
+    created: "2020-02-24T10:49:37.039216+08:00"
     description: A Helm chart for Kubernetes
     digest: 533433b7f1fa361881810efc68b79bd6a2dc72f794f5efcf85c09b0137af539c
     name: billtest-front
@@ -306,7 +328,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.960311+08:00"
+    created: "2020-02-24T10:49:37.03801+08:00"
     description: A Helm chart for Kubernetes
     digest: 0a407191eaa937623c7bee090959ecdb287a9cd7daf5dad6b4a9a99c60814b2d
     name: billtest-front
@@ -316,7 +338,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.95989+08:00"
+    created: "2020-02-24T10:49:37.037102+08:00"
     description: A Helm chart for Kubernetes
     digest: 9a6206d2bb7ec63e6a43a5a5154ee49aec72950428956aba3f57bb6d2076eb05
     name: billtest-front
@@ -326,7 +348,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.959455+08:00"
+    created: "2020-02-24T10:49:37.036201+08:00"
     description: A Helm chart for Kubernetes
     digest: 9205f723e9f259ac1c9628552a1f1e6fba42c692770a5c0de30794c7430bd5a5
     name: billtest-front
@@ -337,7 +359,7 @@ entries:
   hello:
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2020-02-23T17:38:28.967188+08:00"
+    created: "2020-02-24T10:49:37.056224+08:00"
     description: test chart hello values
     digest: 710482bfdad0cf4cdeea1f670374d18d5177f26fa69fc0bdc79102ec33cebd65
     name: hello
@@ -347,7 +369,7 @@ entries:
     version: 3.0.4
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2020-02-23T17:38:28.966823+08:00"
+    created: "2020-02-24T10:49:37.055384+08:00"
     description: test chart hello values
     digest: 923901bff88d97396598a1890c046ad45c30da607740ba67b7a9402e088b60ff
     name: hello
@@ -357,7 +379,7 @@ entries:
     version: 3.0.3
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2020-02-23T17:38:28.966461+08:00"
+    created: "2020-02-24T10:49:37.054404+08:00"
     description: test chart hello
     digest: c514e2d6d77f86446782294c7f2f088a97c96f5987128e5312029755ddc6ea11
     name: hello
@@ -367,7 +389,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.966068+08:00"
+    created: "2020-02-24T10:49:37.053097+08:00"
     description: A Helm chart for Kubernetes test hello affinity
     digest: 0e112fdfc1dfdc25b5709a3db867ad9eb2455588dbe6b36f5f42f83513391df4
     name: hello
@@ -377,7 +399,7 @@ entries:
     version: 2.0.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.965665+08:00"
+    created: "2020-02-24T10:49:37.052215+08:00"
     description: A Helm chart for Kubernetes test hello affinity
     digest: 550008a146b0d29d658770f1af9f589bf4ced06cadff843a18697663ca4211bf
     name: hello
@@ -387,7 +409,7 @@ entries:
     version: 2.0.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.964751+08:00"
+    created: "2020-02-24T10:49:37.051131+08:00"
     description: A Helm chart for Kubernetes test hello affinity
     digest: 28b3c6742f7addd348e939a09c04983e27b642122f44911c028d11e5601d7ef4
     name: hello
@@ -397,7 +419,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.964396+08:00"
+    created: "2020-02-24T10:49:37.050377+08:00"
     description: A Helm chart for Kubernetes test hello affinity
     digest: 3099f5b3c2d63b233483d5a4bcb6ce75bd9062ff74c1e07035611924e9709a6e
     name: hello
@@ -407,7 +429,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.963689+08:00"
+    created: "2020-02-24T10:49:37.048336+08:00"
     description: A Helm chart for Kubernetes test hello affinity
     digest: ec277a418627e65c61f2d73e90b4c72258ab1db0408bd1dc180f63b4e4e0dd0a
     name: hello
@@ -417,7 +439,7 @@ entries:
     version: 1.0.1-affinity+012
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.964043+08:00"
+    created: "2020-02-24T10:49:37.049373+08:00"
     description: A Helm chart for Kubernetes test hello affinity
     digest: 6b0c776eaac7e4ad2dc96081e4fd9b4cc390a7e04766038e73a084b640e2cf13
     name: hello
@@ -427,7 +449,7 @@ entries:
     version: 1.0.1-affinity
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.963304+08:00"
+    created: "2020-02-24T10:49:37.047368+08:00"
     description: A Helm chart for Kubernetes test hello v3
     digest: 90906a33525afb216dfe79b4737642563faa6ade43826f54bba8ff5bd9e4f54e
     name: hello
@@ -437,7 +459,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.962963+08:00"
+    created: "2020-02-24T10:49:37.046632+08:00"
     description: A Helm chart for Kubernetes test hello v3
     digest: 5cb4353c841cdc699b71ccd782d00fd8cb9122f7a82d1dea8aa401b70cab1d43
     name: hello
@@ -447,7 +469,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.968232+08:00"
+    created: "2020-02-24T10:49:37.06035+08:00"
     description: A Helm chart for Kubernetes test hello v3 hash
     digest: 378df555d5e4fd8718b32e334b8e0f9a401df261a8116af88cb9521b10ff26e2
     name: hello
@@ -457,7 +479,7 @@ entries:
     version: alpha.1+33943
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.967844+08:00"
+    created: "2020-02-24T10:49:37.059258+08:00"
     description: A Helm chart for Kubernetes test hello v3 hash
     digest: 330fb8dca5b2ab1ce5b60c003ae60d73d9bdf96ec0725d913f1ecb08de2ba314
     name: hello
@@ -467,7 +489,7 @@ entries:
     version: alpha+7ccc9f99d7ab6b9554624985d9c9b9723b7253c0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.967499+08:00"
+    created: "2020-02-24T10:49:37.058169+08:00"
     description: A Helm chart for Kubernetes test hello v3 hash
     digest: 4f6e29b4f0f2e560db02e69f32741fcf19175a4400c615045567214d50e2d9d5
     name: hello
@@ -478,7 +500,7 @@ entries:
   hellosrv:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.970574+08:00"
+    created: "2020-02-24T10:49:37.066268+08:00"
     description: A Helm chart for Kubernetes
     digest: 943c3cb99a77cc22e7a3757bb800aa16bbbc4ef439361ea30f0d747a417c8be1
     name: hellosrv
@@ -488,7 +510,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.970179+08:00"
+    created: "2020-02-24T10:49:37.065353+08:00"
     description: A Helm chart for Kubernetes
     digest: e1fd43c34bc539943dc0d9e8937fa2cdf62e1315628e372248c4e5221afc43ba
     name: hellosrv
@@ -498,7 +520,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.969802+08:00"
+    created: "2020-02-24T10:49:37.064393+08:00"
     description: A Helm chart for Kubernetes
     digest: 7d4299024e00559a5c147729a43efb72441836b34e000e65de8ea135fa6356d5
     name: hellosrv
@@ -508,7 +530,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.969399+08:00"
+    created: "2020-02-24T10:49:37.063409+08:00"
     description: A Helm chart for Kubernetes
     digest: 1c08fc0c3a7d048019ad57cf8ec94b1f0d5970ce29858dedfdabcff667a634d4
     name: hellosrv
@@ -518,7 +540,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.969013+08:00"
+    created: "2020-02-24T10:49:37.062323+08:00"
     description: A Helm chart for Kubernetes test hellosrv version
     digest: 8e42ceba33beb0921335b12a964b0d99b74b8f2ca37f5ee76438a76a5079673f
     name: hellosrv
@@ -528,7 +550,7 @@ entries:
     version: 0.1.2-alpha+7ccc9f99d7ab6b9554624985d9c9b9723b7253c0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.968622+08:00"
+    created: "2020-02-24T10:49:37.061517+08:00"
     description: A Helm chart for Kubernetes
     digest: 29e4a1859c225d77741327bb4ffbaac313aff379c8a99cd30a5ba29a175f15bb
     name: hellosrv
@@ -539,7 +561,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.971592+08:00"
+    created: "2020-02-24T10:49:37.06706+08:00"
     description: A Helm chart for Kubernetes
     digest: 896935a875c8fe8f8b9b81e5862413de316f8da3d6d9a7e0f6f1e90f6204f551
     name: mychart
@@ -550,7 +572,7 @@ entries:
   mytestchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.972012+08:00"
+    created: "2020-02-24T10:49:37.067786+08:00"
     description: A Helm chart for Kubernetes
     digest: 7ad52bccb1c2fa04cd8b9acf1109b0c6ae714459ca44518c6f28e36238e15c2e
     name: mytestchart
@@ -561,7 +583,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2020-02-23T17:38:28.97318+08:00"
+    created: "2020-02-24T10:49:37.07033+08:00"
     description: test chart nginx 1
     digest: 0ac6ccb819cba3eeb9efb82d2b2621da59021d41397280a1868222b0947b276a
     name: nginx
@@ -571,7 +593,7 @@ entries:
     version: 3.0.4
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2020-02-23T17:38:28.97279+08:00"
+    created: "2020-02-24T10:49:37.069383+08:00"
     description: test chart nginx 1
     digest: 50d7aee77ebb5b758b46e5ee7417dbc4482e7cf8b4f3b9c5a08ed971269a6941
     name: nginx
@@ -581,7 +603,7 @@ entries:
     version: 3.0.3
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2020-02-23T17:38:28.972404+08:00"
+    created: "2020-02-24T10:49:37.068682+08:00"
     description: test chart nginx 1
     digest: cd894022f417e862503e4b37b40e70cddf415825afc77656ded2ea6479753c6e
     name: nginx
@@ -592,7 +614,7 @@ entries:
   nginxsrv:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.975652+08:00"
+    created: "2020-02-24T10:49:37.075364+08:00"
     description: A Helm chart for Kubernetes
     digest: e428a991d065049587329197bc84e2d2fefb3702d4e3bafe5a87762f7e8a700f
     name: nginxsrv
@@ -602,7 +624,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.97528+08:00"
+    created: "2020-02-24T10:49:37.074754+08:00"
     description: A Helm chart for Kubernetes
     digest: 63381c7c55854a32501a17e417fd0d50144101720b1c93ea6daf612de49cbd7f
     name: nginxsrv
@@ -612,7 +634,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.974912+08:00"
+    created: "2020-02-24T10:49:37.074133+08:00"
     description: A Helm chart for Kubernetes
     digest: 968a28a7ff3855c00d0565a7d52757a77c9563cd1d4f835701d4671adb429a1f
     name: nginxsrv
@@ -622,7 +644,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.974485+08:00"
+    created: "2020-02-24T10:49:37.073526+08:00"
     description: A Helm chart for Kubernetes
     digest: 64e513aa68ba638a779b762d7c4441a3b007dccc8e0d4f0d0bdc3bc644c91237
     name: nginxsrv
@@ -632,7 +654,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.973649+08:00"
+    created: "2020-02-24T10:49:37.071977+08:00"
     description: A Helm chart for Kubernetes
     digest: 86e672041fc8b6fabc954cd9231dd1b7302c361b57b6bd0df3a485bed3b5749c
     name: nginxsrv
@@ -642,7 +664,7 @@ entries:
     version: 0.1.0-nginxsrv+7ccc9f99d7ab6b9554624985d9c9b9723b7253c0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-23T17:38:28.974081+08:00"
+    created: "2020-02-24T10:49:37.072837+08:00"
     description: A Helm chart for Kubernetes
     digest: 8ad5bfd9f29628867adfaf07db6cb8a3d0d3f183efbf5b665219b82f3423776f
     name: nginxsrv
@@ -650,4 +672,4 @@ entries:
     urls:
     - nginxsrv-0.1.0-nginxsrv.tgz
     version: 0.1.0-nginxsrv
-generated: "2020-02-23T17:38:28.946661+08:00"
+generated: "2020-02-24T10:49:37.005848+08:00"
