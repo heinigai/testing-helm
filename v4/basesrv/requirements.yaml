@@ -1,0 +1,16 @@
+dependencies:
+    - name: hello
+      version: 3.0.4
+    #   version: alpha.1+33943
+    #   version: 7ccc9f99d7ab6b9554624985d9c9b9723b7253c0
+    #   version: alpha+7ccc9f99d7ab6b9554624985d9c9b9723b7253c0
+      repository: https://heinigai.github.io/testing-helm/
+      condition: hello.enabled
+      tags:
+        - gosrv
+    - name: nginx
+      version: 3.0.4
+      repository: https://heinigai.github.io/testing-helm/
+      condition: nginx.enabled
+      tags:
+        - websrv

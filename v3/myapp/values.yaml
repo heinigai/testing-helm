@@ -1,0 +1,16 @@
+config:
+  foo: bar
+image:
+  pullPolicy: IfNotPresent
+  repository: alexandreroman/hello
+  tag: latest
+imageCredentials:
+  password: null
+  registry: null
+  username: null
+monitoring: true
+replicaCount: 1
+sck: true
+service:
+  port: 80
+  type: LoadBalancer
