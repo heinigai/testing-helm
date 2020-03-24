@@ -2,7 +2,6 @@ nginx:
   enabled: true
 
 hello:
-  # branch: alpha
   enabled: false
 
 tags:
