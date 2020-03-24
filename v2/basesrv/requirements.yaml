@@ -1,13 +1,13 @@
 dependencies:
     - name: hello
       version: 9.9.9
-      repository: https://heinigai.github.io/testing-helm/
+      repository: http://172.31.21.18:8080
       condition: hello.enabled
       tags:
         - gosrv
     - name: nginx
       version: 9.9.9
-      repository: https://heinigai.github.io/testing-helm/
+      repository: http://172.31.21.18:8080
       condition: nginx.enabled
       tags:
         - websrv
