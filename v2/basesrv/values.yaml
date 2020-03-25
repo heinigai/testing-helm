@@ -1,8 +1,10 @@
 nginx:
   enabled: true
+  image: 172.31.17.229:5000/billtest:nginx
 
 hello:
   enabled: false
+  image: 172.31.17.229:5000/billtest:hello
 
 tags:
   gosrv: true

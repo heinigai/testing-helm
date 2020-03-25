@@ -25,7 +25,8 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.imageUrl }}:{{ .Chart.Name }}"
+          # image: "{{ .Values.imageUrl }}:{{ .Chart.Name }}"
+          image: "{{ .Values.image }}"
           imagePullPolicy: Always
           ports:
             - name: http

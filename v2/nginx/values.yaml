@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 # 镜像基本url
-imageUrl: 172.31.17.229:5000/billtest
+image: 172.31.17.229:5000/billtest:aaa
 envType: "complex"
 replicaCount: 1
 
