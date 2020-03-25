@@ -45,6 +45,7 @@ spec:
               value: {{ default "simple" .Values.envType }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      restartPolicy: OnFailure
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
