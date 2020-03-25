@@ -1,6 +1,11 @@
 nginx:
   enabled: true
   image: 172.31.17.229:5000/billtest:nginx
+  hosts:
+    - host: t**.test.klook.io
+      paths: [/]
+    - host: admin**.test.klook.io
+      paths: [/]
 
 hello:
   enabled: false
