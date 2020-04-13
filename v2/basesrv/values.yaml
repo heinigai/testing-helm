@@ -20,6 +20,7 @@ global:
   affinityKey: "klook-travellerpltm.test.klook.io/team"
   affinityValue: "debug"
 
+
 dependencies:
   - name: hello
     version: 9.9.95
