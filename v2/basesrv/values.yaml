@@ -8,8 +8,9 @@ nginx:
       paths: [/]
 
 hello:
-  enabled: false
+  enabled: true
   image: 172.31.17.229:5000/billtest:hello
+  env_flag: test01
 
 tags:
   gosrv: true
@@ -18,3 +19,17 @@ tags:
 global:
   affinityKey: "klook-travellerpltm.test.klook.io/team"
   affinityValue: "debug"
+
+dependencies:
+  - name: hello
+    version: 9.9.93
+    repository: http://172.31.21.18:8080
+    condition: hello.enabled
+    tags:
+      - gosrv
+  - name: nginx
+    version: 9.9.93
+    repository: http://172.31.21.18:8080
+    condition: nginx.enabled
+    tags:
+      - websrv
