@@ -22,7 +22,7 @@ global:
 
 dependencies:
   - name: hello
-    version: 9.9.93
+    version: 9.9.94
     repository: http://172.31.21.18:8080
     condition: hello.enabled
     tags:
