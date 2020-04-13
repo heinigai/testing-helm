@@ -5,6 +5,7 @@
 # 镜像基本url
 image: 172.31.17.229:5000/billtest:aaa
 envType: ""
+envFlag: ""
 replicaCount: 1
 
 serviceAccount:
