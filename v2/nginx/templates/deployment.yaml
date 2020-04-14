@@ -43,6 +43,8 @@ spec:
           env:
             - name: ENV_TYPE
               value: {{ default "simple" .Values.envType }}
+            - name: ENV_FLAG
+              value: {{ default "simple" .Values.envFlag }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
