@@ -75,7 +75,7 @@ env: [
   },
   {
     name: KL_ARGS_LOGLEVEL,
-    value: 4
+    value: "4"
   },
   {
     name: KL_ARGS_CONFIGFILE,
@@ -83,7 +83,7 @@ env: [
   },
   {
     name: KL_ARGS_INSTANCE_ID,
-    value: 20
+    value: "20"
   }
 ]
 
