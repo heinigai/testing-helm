@@ -1,35 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "nginx.fullname" . }}
+  name: {{ include "frontlogsrv.fullname" . }}
   labels:
-    {{- include "nginx.labels" . | nindent 4 }}
+    {{- include "frontlogsrv.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "nginx.selectorLabels" . | nindent 6 }}
+      {{- include "frontlogsrv.selectorLabels" . | nindent 6 }}
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        {{- include "nginx.selectorLabels" . | nindent 8 }}
+        {{- include "frontlogsrv.selectorLabels" . | nindent 8 }}
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-      serviceAccountName: {{ include "nginx.serviceAccountName" . }}
+      serviceAccountName: {{ include "frontlogsrv.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          # image: "{{ .Values.imageUrl }}:{{ .Chart.Name }}"
-          image: "{{ .Values.image }}"
-          imagePullPolicy: Always
+          image: "{{ .Values.image.repository }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
               containerPort: 80
@@ -43,25 +42,17 @@ spec:
           #     path: /
           #     port: http
           env:
-            - name: ENV_TYPE
-              value: {{ default "simple" .Values.envType }}
-            - name: ENV_FLAG
-              value: {{ default "simple" .Values.envFlag }}
+            {{- toYaml .Values.env | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+    {{- with .Values.affinity }}
       affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: {{ .Values.global.affinityKey }}
-                operator: In
-                values:
-                - {{ .Values.global.affinityValue }}
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
     {{- with .Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
