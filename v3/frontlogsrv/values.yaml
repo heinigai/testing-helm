@@ -74,6 +74,10 @@ env: [
     value: t01
   },
   {
+    name: KL_ARGS_KVADDR,
+    value: 172.31.3.109:10075
+  },
+  {
     name: KL_ARGS_LOGLEVEL,
     value: "4"
   },
